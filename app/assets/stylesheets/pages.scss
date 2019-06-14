@@ -29,7 +29,7 @@ section {
   font-weight:300;
   font-size:38px;
   padding-top:18vh;
-  height:38vh;
+  height:36vh;
   overflow:hidden;
   -webkit-backface-visibility: hidden;
   -webkit-perspective: 1000;
@@ -131,7 +131,11 @@ a {
 .main {
   width: 100%;
 }
-.jumbotron {
+
+.principal{
+  height: 85vh;
+}
+.jumbotron{
   background: url(https://images.unsplash.com/photo-1503517094625-5bfb5286f8bb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1524&q=80) center center;
   background-size: auto;
   background-size: cover;
@@ -177,15 +181,40 @@ a.btn {
   padding: 7px;
   border-radius: 15px;
   background-color: #eaeaea;
+  opacity: 0.9;
   box-shadow: 9px 9px 5px dimgrey;
 }
 
 img:hover{
   opacity: -0.5;
 }
-// .hover-white:hover img{
-//   opacity: 1.0;
-// }
+
+.img-description{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #eaeaea;
+}
+.text {
+  color: rgb(51, 50, 50);
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.project-box:hover .img-description {
+  opacity: 0.9;
+}
+
+
 .square-box {
   position: relative;
   width: 100%;
@@ -269,8 +298,9 @@ img:hover{
   width: 100%;
   color: #eaeaea;
   background: orange;
+  opacity: 0.9;
   border: 0.5px solid #c8c8c8;
-  border-radius: 4px;
+  border-radius: 8px;
   padding: 20px;
   box-shadow: 5px 5px 5px #b4b3b3;
   margin-top: 15px;
@@ -328,3 +358,10 @@ img:hover{
 p {
   margin: 0 0 10px;
 }
+
+/*QUERIES*/
+// @media (min-width:768px){
+//   .name{
+//     visibility: hidden;
+//   }
+// }
