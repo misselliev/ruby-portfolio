@@ -1,5 +1,3 @@
-<html>
-
 <head>
   <title>Portfolio</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,300italic,500,700" rel="stylesheet"
@@ -12,24 +10,21 @@
   <meta content="authenticity_token" name="csrf-param">
   <meta content="uAcY23u6hXvpzVcc9l3KXZyz7slle4yys3c0VaShOdI=" name="csrf-token">
 </head>
-
-<body>
-  <%= render 'nav'%>
-  <div class="main home">
-    <div class="jumbotron" >
-      <div class="container">
-        <%# <h2>Hello. My name is <span class="highlight">Eli Villalejos</span> and I have creative ideas and build websites
-        </h2> %>
-        <section>
-          <div class="intro">Eli Villalejos</div> 
-          <div class="intro-slide"> 
-            <span>~ Fullstack web developer</span>
-          </div>
-        </section>
-        <a class="btn right btn-hover" href="portfolio">View my Work</a>
+<div class="header centered-content">
+    <div class="container">
+      <div class="row">
+        <div class="menu col-xs-8">
+          <ul>
+            <li><a href="/">Welcome</a></li>
+            <li><%= link_to "Portfolio", portfolio_path%></li>
+            <li><a href="https://medium.com/@elizabeth.villalejos">Blog</a></li>
+            <li><a href="about">About</a></li>
+            <li><a href="contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="name col-xs-4">
+          <h1>Eli Villalejos</h1>
+        </div>
       </div>
     </div>
   </div>
-</body>
-<%= render 'footer'%>
-</html>
