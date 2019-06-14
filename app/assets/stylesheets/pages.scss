@@ -18,6 +18,73 @@ body{
   color: #333;
   background-color: #fff;
 }
+/*ANIMATION STYLE*/
+@import url('https://fonts.googleapis.com/css?family=Courgette&display=swap');
+
+section {
+  text-align:center;
+  //background:linear-gradient(141deg, #ccc 25%, #eee 40%, #ddd 55%);
+  color:black;
+  font-family:'Courgette';
+  font-weight:300;
+  font-size:38px;
+  padding-top:18vh;
+  height:38vh;
+  overflow:hidden;
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  -webkit-transform: translate3d(0,0,0);
+}
+
+// .intro, .intro-slide{
+//   text-shadow: 2px 1px 4px dimgrey;
+// }
+
+div {
+  display:inline-block;
+  overflow:hidden;
+  white-space:nowrap;
+}
+
+section intro:first-of-type {
+  animation: showup 7s infinite;
+}
+
+section intro-slide:last-of-type {
+  width:0px;
+  animation: reveal 7s infinite;
+}
+
+section div:last-of-type span {
+  margin-left:-355px;
+  animation: slidein 7s infinite;
+}
+
+@keyframes showup {
+    0% {opacity:0;}
+    20% {opacity:1;}
+    80% {opacity:1;}
+    100% {opacity:0;}
+}
+
+@keyframes slidein {
+    0% { margin-left:-800px; }
+    20% { margin-left:-800px; }
+    35% { margin-left:0px; }
+    100% { margin-left:0px; }
+}
+
+@keyframes reveal {
+    0% {opacity:0;width:0px;}
+    20% {opacity:1;width:0px;}
+    30% {width:365px;}
+    80% {opacity:1;}
+    100% {opacity:0;width:365px;}
+}
+
+
+/*LANDING PAGE*/
+
 .container {
   //padding: 0 200px 0 280px;
   width: 100%;
@@ -68,7 +135,7 @@ a {
   background: url(https://images.unsplash.com/photo-1503517094625-5bfb5286f8bb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1524&q=80) center center;
   background-size: auto;
   background-size: cover;
-  min-height: 600px;
+  min-height: 500px;
   width: 100%;
   margin-bottom: 0px;
 }
@@ -187,7 +254,7 @@ img:hover{
   border-radius: 50%;
 }
 .section-title{
-  text-shadow: 5px 1px 2px black;
+  text-shadow: 2px 1px 6px dimgrey;
   padding-top: 10px;
   padding-bottom: 30px;
   text-align: center;
@@ -195,7 +262,8 @@ img:hover{
   margin-left: auto;
   font-size: 56px;
   width: 100%;
-  color:#ededed;
+  color:black;
+  font-family:'Courgette';
 }
 .section-container{
   width: 100%;
