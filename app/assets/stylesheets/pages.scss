@@ -19,7 +19,7 @@ body{
   background-color: #fff;
 }
 .container {
-  padding: 0 200px 0 280px;
+  //padding: 0 200px 0 280px;
   width: 100%;
   margin-right: auto;
   margin-left: auto;
@@ -64,7 +64,7 @@ a {
 .main {
   width: 100%;
 }
-.home .jumbotron {
+.jumbotron {
   background: url(https://images.unsplash.com/photo-1503517094625-5bfb5286f8bb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1524&q=80) center center;
   background-size: auto;
   background-size: cover;
@@ -108,27 +108,32 @@ a.btn {
 .project-box{
   margin: 20px;
   padding: 7px;
-  border-radius: 3px;
-  border: solid 1px orange;
+  border-radius: 15px;
+  background-color: #eaeaea;
+  box-shadow: 9px 9px 5px dimgrey;
 }
-.hover-white:hover img{
-  opacity: 1.0;
+
+img:hover{
+  opacity: -0.5;
 }
-.box-square {
+// .hover-white:hover img{
+//   opacity: 1.0;
+// }
+.square-box {
   position: relative;
   width: 100%;
   /* desired width */
   box-sizing: border-box;
-  min-height: 100%; }
-
-.box-square-min {
+  min-height: 100%; 
+}
+.square-box-min {
   position: relative;
   width: 50%;
   /* desired width */
   box-sizing: border-box;
   min-height: 100%; }
 
-.box-square:before {
+.square-box:before {
   content: "";
   display: block;
   padding-top: 100%;
@@ -171,15 +176,19 @@ a.btn {
   padding-bottom: 20px;
 } 
 .img-small{
-  width: 3rem;
-  height: 3rem; 
+  width: 6rem;
+  height: 6rem; 
+}
+.img-md{
+  width: 40rem;
+  height: 30rem;
 }
 .round{
   border-radius: 50%;
 }
 .section-title{
   text-shadow: 5px 1px 2px black;
-  padding-top: 80px;
+  padding-top: 10px;
   padding-bottom: 30px;
   text-align: center;
   margin-right: auto;
@@ -206,6 +215,7 @@ a.btn {
   margin-right: auto;
   margin-left: auto;
   color:black;
+  text-align: center;
 }
 
 /*FOOTER STYLES*/
@@ -218,6 +228,9 @@ a.btn {
 .footer .social_media {
   margin: 15px 0 20px;
   width: 100%;
+}
+.footer .container{
+  padding: 0;
 }
 .social_media li {
   display: inline-block;
