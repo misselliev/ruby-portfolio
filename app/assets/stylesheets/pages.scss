@@ -70,6 +70,7 @@ a {
   background-size: cover;
   min-height: 600px;
   width: 100%;
+  margin-bottom: 0px;
 }
 .home h2 {
   color: #333;
@@ -97,14 +98,125 @@ a.btn {
 .right {
   float: right;
 }
+.btn-hover:hover{
+  color: lightcoral !important;
+}
+/*PORTFOLIO STYLING*/
+.section-padding {
+  padding: 60px 0px;
+}
+.project-box{
+  margin: 20px;
+  padding: 7px;
+  border-radius: 3px;
+  border: solid 1px orange;
+}
+.hover-white:hover img{
+  opacity: 1.0;
+}
+.box-square {
+  position: relative;
+  width: 100%;
+  /* desired width */
+  box-sizing: border-box;
+  min-height: 100%; }
+
+.box-square-min {
+  position: relative;
+  width: 50%;
+  /* desired width */
+  box-sizing: border-box;
+  min-height: 100%; }
+
+.box-square:before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+  /* initial ratio of 1:1*/ }
+
+.centered-content {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.project-title{
+  display: flex;
+  color: black;
+}
+.img-content {
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  min-width: 100%;
+  min-height: 100%; }
+
+/*ABOUT*/
+.section{
+  display: flex;
+  flex-flow: row wrap; 
+  justify-content: space-around;
+  margin-left: auto;
+  margin-right: auto; 
+  width:80%;
+}
+.section-icons{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding-top: 40px;
+  padding-bottom: 20px;
+} 
+.img-small{
+  width: 3rem;
+  height: 3rem; 
+}
+.round{
+  border-radius: 50%;
+}
+.section-title{
+  text-shadow: 5px 1px 2px black;
+  padding-top: 80px;
+  padding-bottom: 30px;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 56px;
+  width: 100%;
+  color:#ededed;
+}
+.section-container{
+  width: 100%;
+  color: #eaeaea;
+  background: orange;
+  border: 0.5px solid #c8c8c8;
+  border-radius: 4px;
+  padding: 20px;
+  box-shadow: 5px 5px 5px #b4b3b3;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.section-info{
+  width: 90%;
+  font-size: 1.3rem;
+  line-height: 38px;
+  margin-right: auto;
+  margin-left: auto;
+  color:black;
+}
+
+/*FOOTER STYLES*/
 .footer {
   background-color: #fff;
-  height: 200px;
+  height: 50px;
   text-align: right;
   width: 100%;
 }
 .footer .social_media {
-  margin: 65px 0 20px;
+  margin: 15px 0 20px;
   width: 100%;
 }
 .social_media li {
