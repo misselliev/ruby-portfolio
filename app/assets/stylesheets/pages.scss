@@ -209,11 +209,11 @@ img:hover{
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
+  text-align: center;
 }
 .project-box:hover .img-description {
   opacity: 0.9;
 }
-
 
 .square-box {
   position: relative;
