@@ -276,8 +276,8 @@ a.btn {
 }
 .section-container{
   width: 100%;
-  color: #eaeaea;
-  background: orange;
+  background: #eaeaea;
+  // background: orange;
   opacity: 0.9;
   border: 0.5px solid #c8c8c8;
   border-radius: 8px;
@@ -288,7 +288,7 @@ a.btn {
 }
 .section-info{
   width: 60%;
-  // font-size: 2.3rem;
+  font-size: 15px;
   // line-height: 38px;
   // margin-right: auto;
   // margin-left: auto;
@@ -301,13 +301,14 @@ a.btn {
   margin-right: auto;
 }
 .bio-info{
-  text-align:center;
-  font-size:1.5em;
+  text-align:left;
+  font-size:1.3em;
   color:black;
   line-height:1.5em;
-  width: 90%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 0;
 }
 .bio-info li{
   list-style:none;
