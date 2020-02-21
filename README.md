@@ -6,6 +6,7 @@
 Building a portfolio app in rails to feature projects. 
 
 ![alt text](docs/home.png)
+![alt text](docs/projects.png)
 
 ## ✨Live Demo
 
