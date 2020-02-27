@@ -8,7 +8,7 @@ Building a portfolio app in rails to feature projects.
 ![alt text](docs/home.png)
 ![alt text](docs/projects.png)
 
-## ✨Live Demo
+## ✨ Live Demo
 
 You can look at it [here](https://misselliev-portfolio.herokuapp.com/)
 
@@ -36,7 +36,8 @@ bundle install
 ```sh
 rails server
 ```
-
+## :pencil2: Todo
+- Tests to be added
 
 ## Author
 
