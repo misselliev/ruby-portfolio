@@ -37,7 +37,7 @@ bundle install
 rails server
 ```
 ## :pencil2: Todo
-- Tests to be added
+- Tests to be added.
 
 ## Author
 
